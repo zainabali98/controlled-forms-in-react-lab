@@ -19,6 +19,19 @@ function handleInputChange(event) {
   setNewBook(newBookCopy);
 }
 
+
+function handleSubmit(event) {
+  event.preventDefault();
+
+  setBooks([...books, newBook]);
+
+  setNewBook({
+    title: '',
+    author: ''
+  });
+}
+
+
   return (
     <div>
       <h1>Book Shelf</h1>
