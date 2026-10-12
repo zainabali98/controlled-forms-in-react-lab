@@ -1,6 +1,6 @@
-// src/App.jsx
+
 import './App.css';
-import Bookshelf from './Bookshelf.jsx';
+import BookShelf from './components/BookShelf/BookShelf';
 
 const App = () => {
   return (
