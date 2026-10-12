@@ -13,6 +13,11 @@ const [newBook, setNewBook] = useState({
   author: ''
 })
 
+function handleInputChange(event) {
+  const newBookCopy = { ...newBook };
+  newBookCopy[event.target.name] = event.target.value;
+  setNewBook(newBookCopy);
+}
 
   return (
     <div>
